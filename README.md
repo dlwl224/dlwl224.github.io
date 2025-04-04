@@ -24,9 +24,6 @@ HTML, CSS, JavaScript를 사용하여 제작되었으며, 웹 폼을 이용한 �
 ├── 📜 index.html    # 포트폴리오 메인 페이지
 ├── 📜 form.html     # 웹 폼 페이지 (문의하기)
 ├── 📜 style.css     # 스타일 시트
-├── 📜 script.js     # 추가적인 JavaScript 코드
-├── 📜 README.md     # 프로젝트 설명 파일 (이 문서)
+├── 📜 README.md     # 프로젝트 설명 파일 
 ├── 📁 media         # 이미지 파일 저장 폴더
-│   ├── profile.webp
-│   ├── project1.png
-└── 📁 pages         # 기타 상세 페이지 폴더
+    ├── profile.webp
