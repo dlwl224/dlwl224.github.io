@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="author" content="Lee JiWon"> 
+        <meta name="description" content="이지원의 포트폴리오 페이지입니다."> <!-- 웹사이트 설명 -->
+        <title>Portfolio of Lee JiWon</title> <!-- 브라우저 탭 제목 -->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- 외부 CSS 파일 연결 -->
+    </head>
+    <body>
+        <!-- 페이지의 헤더 섹션 -->
+        <header>
+            <h1>이지원의 포트폴리오</h1>
+        </header>
+        
+        <!-- 내비게이션 바 -->
+        <nav>
+            <a href="#overview">소개</a>
+            <a href="#education">학력</a>
+            <a href="#projects">프로젝트</a>
+            <a href="#contact">문의하기</a>
+        </nav>
+        
+        <!-- 소개 섹션 -->
+        <section class="overview" id="overview">
+            <h2>소개</h2>
+            <img src="./media/profile.webp" alt="프로필 이미지" class="profile-img"> <!-- 프로필 이미지 -->
+            <article class="contact">
+                <p>사이버 보안 전공자로서 다양한 프로젝트를 수행했습니다.</p>
+                <div class="contact-item">
+                    <span class="label">✉️ 이메일:</span>
+                    <a href="mailto:jw5194@naver.com">jw5194@naver.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="label">🐙 깃허브:</span>
+                    <a href="https://github.com/dlwl224" target="_blank">https://github.com/dlwl224</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 학력 섹션 -->
+        <section class="education" id="education">
+            <h2>🏫 학력</h2>
+            <details> <!-- 학력 정보를 접을 수 있도록 details 태그 사용 -->
+                <summary>덕성여자대학교 사이버보안전공</summary>
+                <p>보안 기술 및 웹 보안에 대한 학습과 연구를 진행하고 있습니다.</p>
+            </details>
+        </section>
+        
+        <!-- 프로젝트 섹션 -->
+        <section class="projects" id="projects">
+            <h2>📁 프로젝트</h2>
+            <ol>
+                <li>
+                    <article>
+                        <h3>덕성여자대학교 맛집 소개 프로젝트</h3>
+                        <p>덕성여대 주변 맛집을 소개하는 웹사이트입니다.</p>
+                        <div class="project-table-wrapper">
+                            <table class="project-table">
+                                <tr>
+                                    <td>
+                                        <a href="https://leejiwon.github.io/project1/" target="_blank">
+                                            <img src="./media/project1.png" alt="프로젝트 1" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://github.com/leejiwon/project1">프로젝트 코드</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                </li>
+            </ol>
+        </section>
+        
+        <!-- 문의하기 섹션 -->
+        <section class="contact" id="contact">
+            <h2>📩 문의하기</h2>
+            <p>문의사항이 있으면 아래 이메일 또는 문의하기를 클릭해주세요.</p>
+            <p>✉️ 이메일: <a href="mailto:jw5194@naver.com">jw5194@naver.com</a></p>
+            <p><a href="form.html">문의하기 양식으로 이동</a></p>
+        </section>
+        
+        <!-- 푸터 섹션 -->
+        <footer>
+            <p>&copy; 2025 LEE JIWON. 모든 권리 보유.</p>
+        </footer>
+    </body>
+</html>
