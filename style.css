@@ -122,7 +122,6 @@ footer {
 
 
 /* form.html 전용으로 body 중앙 정렬 */
-/* body 전체 중앙 정렬은 제거 또는 최소화 */
 body.form-page {
     background-color: #f9f9f9;
     margin: 0;
