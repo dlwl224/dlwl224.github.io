@@ -6,6 +6,7 @@ body {
     background-color: #f9f9f9;
     color: #222;
     line-height: 1.6;
+    padding-bottom: 80px;
 }
 
 /* 헤더 스타일 */
@@ -79,6 +80,10 @@ section {
     transform: scale(1.05);
 }
 
+.project-table tr:hover {
+    background-color: #f0f0f0;
+}
+
 /* 문의하기 스타일 */
 .contact-item {
     display: flex;
@@ -100,10 +105,14 @@ section {
 
 /* 푸터 스타일 */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
     padding: 15px;
     background-color: #222;
     color: white;
-    margin-top: 30px;
     font-size: 14px;
+    z-index: 10;
 }
