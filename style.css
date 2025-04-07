@@ -122,18 +122,20 @@ footer {
 
 
 /* form.html 전용으로 body 중앙 정렬 */
+/* body 전체 중앙 정렬은 제거 또는 최소화 */
 body.form-page {
     background-color: #f9f9f9;
     margin: 0;
-    padding: 30px 0;
+    padding: 40px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 /* 제목 중앙 정렬 */
 body.form-page h2 {
     text-align: center;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
