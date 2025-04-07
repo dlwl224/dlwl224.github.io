@@ -18,12 +18,12 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
 /* 테이블 행 hover 시 색상 변경 */
 table tbody tr:hover {
     background-color: #696767;
     cursor: pointer;
 }
-
 
 /* 내비게이션 스타일 */
 nav {
@@ -86,8 +86,6 @@ section {
     transform: scale(1.05);
 }
 
-
-
 /* 문의하기 스타일 */
 .contact-item {
     display: flex;
@@ -121,31 +119,66 @@ footer {
     z-index: 10;
 }
 
-form {
+
+
+/* form.html 전용으로 body 중앙 정렬 */
+body.form-page {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* 수평 */
+    align-items: center;      /* 수직 */
+    flex-direction: column;
+}
+
+/* 제목 중앙 정렬 */
+body.form-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* form 박스 */
+body.form-page form {
+    width: 90%;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
     background: white;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    text-align: center; /*  폼 내 텍스트 가운데 정렬 */
+    text-align: center;
 }
 
-/* form 내부 요소 정렬 */
-form label,
-form input,
-form select,
-form textarea,
-form button {
+/* form 안 요소 정렬 */
+body.form-page form label,
+body.form-page form input,
+body.form-page form select,
+body.form-page form textarea,
+body.form-page form button {
     display: block;
-    margin: 10px auto;  /* 가운데 정렬 */
-    text-align: center; /* 텍스트 중앙정렬 */
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
 }
 
-/* 체크박스, 라디오 버튼은 인라인으로 정렬하고 싶다면 아래처럼 */
-input[type="checkbox"],
-input[type="radio"] {
+/* 체크박스, 라디오 인라인 */
+body.form-page input[type="checkbox"],
+body.form-page input[type="radio"] {
     display: inline-block;
     margin: 0 5px;
+    width: auto;
 }
 
+/* 버튼 */
+body.form-page form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.form-page form button:hover {
+    background-color: #555;
+}
