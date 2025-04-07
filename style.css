@@ -18,6 +18,12 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+/* 테이블 행 hover 시 색상 변경 */
+table tbody tr:hover {
+    background-color: #696767;
+    cursor: pointer;
+}
+
 
 /* 내비게이션 스타일 */
 nav {
@@ -113,4 +119,12 @@ footer {
     color: white;
     font-size: 14px;
     z-index: 10;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
