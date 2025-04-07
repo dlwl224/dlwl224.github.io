@@ -125,13 +125,11 @@ footer {
 body.form-page {
     background-color: #f9f9f9;
     margin: 0;
-    padding: 0;
-    height: 100vh;
+    padding: 30px 0;
     display: flex;
-    justify-content: center;  /* 수평 */
-    align-items: center;      /* 수직 */
-    flex-direction: column;
+    justify-content: center;
 }
+
 
 /* 제목 중앙 정렬 */
 body.form-page h2 {
@@ -181,4 +179,21 @@ body.form-page form button {
 }
 body.form-page form button:hover {
     background-color: #555;
+}
+
+/* 체크박스들을 감싼 div */
+body.form-page .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* 라디오 버튼 그룹도 비슷하게 정렬 */
+body.form-page .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
