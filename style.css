@@ -120,11 +120,32 @@ footer {
     font-size: 14px;
     z-index: 10;
 }
+
 form {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
     padding: 20px;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /*  폼 내 텍스트 가운데 정렬 */
 }
+
+/* form 내부 요소 정렬 */
+form label,
+form input,
+form select,
+form textarea,
+form button {
+    display: block;
+    margin: 10px auto;  /* 가운데 정렬 */
+    text-align: center; /* 텍스트 중앙정렬 */
+}
+
+/* 체크박스, 라디오 버튼은 인라인으로 정렬하고 싶다면 아래처럼 */
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    margin: 0 5px;
+}
+
