@@ -80,9 +80,7 @@ section {
     transform: scale(1.05);
 }
 
-.project-table tr:hover {
-    background-color: #867d8b;
-}
+
 
 /* 문의하기 스타일 */
 .contact-item {
